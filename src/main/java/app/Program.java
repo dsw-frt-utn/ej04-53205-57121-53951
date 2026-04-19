@@ -11,6 +11,8 @@ public class Program {
         Persistencia.inicializar();
         
         //aqui inicia la ventana menu principal
+        ListarVehiculosView view = new ListarVehiculosView();
+        view.setVisible(true);
         
     }
 }

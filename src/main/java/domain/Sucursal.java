@@ -12,7 +12,7 @@ public class Sucursal {
         this.ciudad = ciudad;
         this.responsable = responsable;
     }
-
+   
     public String getCodigo() {
         return codigo;
     }
@@ -28,4 +28,11 @@ public class Sucursal {
     public Responsable getResponsable() {
         return responsable;
     }
+    
+    @Override
+    public String toString() {
+        // Esto es lo que el JComboBox va a mostrar físicamente en la pantalla
+        return this.codigo + " - " + this.direccion;
+    }
+
 }

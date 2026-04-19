@@ -25,7 +25,7 @@ public class Persistencia {
     }
     
     private static void inicializarVehiculos(){
-        Sucursal s1 = sucursales.get(0);
+        /*Sucursal s1 = sucursales.get(0);
         Sucursal s2 = sucursales.get(1);
         
         Marca renault = new Marca("Renault", "Francia");
@@ -42,9 +42,15 @@ public class Persistencia {
         vehiculos.add(v1);
         vehiculos.add(v2);
         vehiculos.add(v3);
-        vehiculos.add(v4);
+        vehiculos.add(v4);*/
     }
     
+    public static ArrayList<Sucursal> getSucursales(){
+        return sucursales;
+    }
+    public static ArrayList<Responsable> getResponsables(){
+        return responsables;
+    }
     public static ArrayList<Vehiculo> getVehiculos(){
         return vehiculos;
     }
