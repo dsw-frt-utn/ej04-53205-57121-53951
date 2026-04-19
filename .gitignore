@@ -26,3 +26,4 @@ replay_pid
 #Archivos de Mac
 .DS_Store
 target/.DS_Store
+/target/
