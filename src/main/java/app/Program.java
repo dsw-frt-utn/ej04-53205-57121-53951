@@ -9,5 +9,6 @@ public class Program {
         Persistencia.inicializar();
         ListarVehiculosView view = new ListarVehiculosView();
         view.setVisible(true);
+        
     }
 }

@@ -46,6 +46,13 @@ public abstract class Vehiculo {
     public boolean esDe(VehiculoTipo tipo){
         return this.tipo == tipo;
     }
+    public String getModelo() {
+    return modelo;
+    }
+
+    public Sucursal getSucursal() {
+    return sucursal;
+    }
     @Override
     public String toString() {
         return patente + " - " + marca + " " + modelo + " - Sucursal: " + sucursal.getCodigo();

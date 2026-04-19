@@ -17,23 +17,28 @@ public class ListarVehiculosView extends javax.swing.JFrame {
         listarVehiculos();
     }
     private void listarVehiculos(){
-        ArrayList<VehiculoViewModel> vehiculos = Controlador.getVehiculos();
-        vehiculosGrid.setModel(new DefaultTableModel(new Object[][] {}, 
-            new String[] { "Patente","Vehículo", "Tipo", "Sucursal", "Cap.Carga", "Km/litro", "Año", "Litros extra", "Km a recorrer" }));
-        
-        for(VehiculoViewModel vehiculo : vehiculos){
-            ((DefaultTableModel)vehiculosGrid.getModel()).addRow(new Object[] {
-                vehiculo.getPatente(),
-                vehiculo.getVehiculo(),
-                vehiculo.getTipo(),
-                vehiculo.getSucursal(),
-                vehiculo.getCapacidadCarga(),
-                vehiculo.getKmPorLitro(),
-                vehiculo.getAnio(),
-                vehiculo.getLitrosExtra(),
-                vehiculo.getKmARecorrer()
-            });
-        }
+    ArrayList<VehiculoViewModel> vehiculos = Controlador.getVehiculos();
+  
+    String[] columnas = { "Patente", "Vehículo", "Tipo", "Sucursal", "Cap.Carga", "Km/litro", "Año", "Litros extra", "Km a recorrer" };
+    
+   
+    DefaultTableModel modelo = new DefaultTableModel(new Object[][] {}, columnas);
+   
+    for (VehiculoViewModel v : vehiculos) {
+        modelo.addRow(new Object[] {
+            v.getPatente(),
+            v.getVehiculo(),
+            v.getTipo(),
+            v.getSucursal(),
+            v.getCapacidadCarga(),
+            v.getKmPorLitro(),
+            v.getAnio(),
+            v.getLitrosExtra(),
+            v.getKmARecorrer()
+        });
+    }
+    
+    vehiculosGrid.setModel(modelo);
     }
 
     /**
