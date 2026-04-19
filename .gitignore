@@ -26,6 +26,11 @@ replay_pid*
 # Maven #
 target/
 
+#Archivos de Mac
+.DS_Store
+target/.DS_Store
+/target/
+
 # NetBeans #
 nbproject/private/
 build/
