@@ -1,2 +1,8 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/39DJV9ho)
+# Desarrollo de Software
+## Ejercicio N4
+### Integrantes: 
+57121 - Medrano Braian - braiankpo_18@hotmail.com
+53205 - Escobedo Lautaro - lautaro.escobedo@alu.frt.utn.edu.ar
+53951 - Chumba Fernando - fernando.chumba@alu.frt.utn.edu.ar
+
 
