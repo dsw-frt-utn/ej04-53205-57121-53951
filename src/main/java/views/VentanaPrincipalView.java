@@ -84,9 +84,9 @@ public class VentanaPrincipalView extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 //creo la ventana
-       //CargarVehiculosView ventanaCargar = new CargarVehiculosView();
+       CargarVehiculoView ventanaCargar = new CargarVehiculoView();
 //hago la ventana visible
-      //  ventanaCargar.setVisible(true);
+       ventanaCargar.setVisible(true);
 
 
 this.setVisible(false);// TODO add your handling code here:

@@ -152,7 +152,7 @@ public class CargarVehiculoView extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(255, 51, 51));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setText("CANCELAR");
+        jButton2.setText("REGRESAR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -266,7 +266,9 @@ public class CargarVehiculoView extends javax.swing.JFrame {
     }//GEN-LAST:event_TextFieldPatenteActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        VentanaPrincipalView menu = new VentanaPrincipalView();
+        menu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void comboBoxTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxTipoActionPerformed
@@ -291,7 +293,8 @@ public class CargarVehiculoView extends javax.swing.JFrame {
         try {
      
             String patente = TextFieldPatente.getText().trim();
-            String marca = comboBoxMarca.getSelectedItem().toString();
+            String nombreMarca = comboBoxMarca.getSelectedItem().toString();
+            domain.Marca marca = new domain.Marca(nombreMarca, "No especificado");
             String modelo = TextFieldModelo.getText().trim();
 
          

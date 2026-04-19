@@ -9,10 +9,6 @@ public class Program {
         VentanaPrincipalView menu = new VentanaPrincipalView();
         menu.setVisible(true);
         Persistencia.inicializar();
-        
-        //aqui inicia la ventana menu principal
-        ListarVehiculosView view = new ListarVehiculosView();
-        view.setVisible(true);
-        
+      
     }
 }
